@@ -57,5 +57,9 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  env: {
+    apiUrl: process.env.API_URL,
+    s3Url: process.env.S3_URL
   }
 }
