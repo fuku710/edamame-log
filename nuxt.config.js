@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 export default {
   mode: 'spa',
   /*
@@ -61,7 +59,7 @@ export default {
     extend(config, ctx) {}
   },
   env: {
-    apiUrl: process.env.API_URL,
-    s3Url: process.env.S3_URL
+    API_URL: process.env.API_URL,
+    S3_URL: process.env.S3_URL
   }
 }
