@@ -20,9 +20,9 @@ export default {
   },
   methods: {
     async fetchEdamames() {
-      const response = await this.$axios.$get(process.env.apiUrl)
+      const response = await this.$axios.$get(process.env.API_URL)
       this.edamames = response.edamames.map((edamame) => ({
-        imageUrl: `${process.env.s3Url}/${edamame}`,
+        imageUrl: `${process.env.S3_URL}/${edamame}`,
         date: Number(edamame.slice(0, -4)),
         month: Number(edamame.slice(2, 4)),
         day: Number(edamame.slice(4, 6))
