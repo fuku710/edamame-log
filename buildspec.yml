@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  insall:
+    runtime-versions:
+      nodejs: 12.x
+    commands:
+      - echo Installing npm packages...
+      - npm ci
+  build:
+    commands:
+      - echo Building app...
+      - npm run build
+artifacts:
+  files:
+    - dist/**/*
