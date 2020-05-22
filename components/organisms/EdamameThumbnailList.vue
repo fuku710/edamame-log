@@ -36,5 +36,6 @@ export default {
   padding: 4px;
   margin: 8px;
   box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 4px 2px;
+  background-color: #f1f1f1;
 }
 </style>
